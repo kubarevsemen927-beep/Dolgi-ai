@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ДОЛГИ AI — премиум</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="menuBtn" aria-label="Меню">☰</button>
+
+<div id="overlay"></div>
+
+<aside id="panel">
+  <div class="panel-head">История чатов</div>
+  <button id="newChatBtn">＋ Новый чат</button>
+  <div id="chatList"></div>
+  <div id="storageWarn" class="warn" hidden>Браузер не хранит историю для этого файла. Пользуйтесь кнопками ниже — они сохраняют чаты в файл на компьютере.</div>
+  <div class="panel-btns">
+    <button id="saveBtn">💾 Сохранить чаты</button>
+    <button id="loadBtn">📂 Загрузить</button>
+    <input type="file" id="fileInput" accept=".json" hidden>
+  </div>
+</aside>
+
+<main id="chat">
+  <header id="chatHead">✦ ДОЛГИ AI ✦</header>
+  <div id="messages">
+    <div id="emptyHint">✦ ДОЛГИ AI ✦<span>Напишите первое сообщение</span></div>
+  </div>
+  <div id="typing" hidden><span></span><span></span><span></span></div>
+  <div id="inputBar">
+    <textarea id="input" rows="1" placeholder="Напишите сообщение…"></textarea>
+    <button id="sendBtn" aria-label="Отправить">➤</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
